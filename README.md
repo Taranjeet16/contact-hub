@@ -1,32 +1,22 @@
-# Contact Management Web App
+# Contact Management Web App (MERN Stack)
 
-A Contact Management Web Application built using the **MERN stack** as part of a Web Developer interview assignment.  
-The application demonstrates core MERN fundamentals with clean UI, REST APIs, and MongoDB integration.
+A full-stack **Contact Management Web Application** built using the **MERN stack** as part of a Web Developer interview assignment.
 
 ---
 
 ## 🚀 Features
 
-### Core Features
-- Add new contacts with client-side validation
-- Fields:
+- Add, update, delete contacts
+- Contact fields:
   - Name (required)
   - Email (valid format)
   - Phone (required)
   - Category (optional)
   - Message (optional)
-- Store contacts in MongoDB
-- Display contacts in a list without page reload
-- Edit and update existing contacts
-- Delete contacts
+- Client-side form validation
+- Contacts stored in MongoDB
+- Real-time UI updates without page reload
 - Responsive and clean UI
-
-### Bonus Features
-- Contact categories with visual tags
-- Search contacts by name, email, or phone
-- Sort contacts
-- Export contacts to CSV
-- Category, edit, search, and export are bonus features.
 
 ---
 
@@ -36,6 +26,7 @@ The application demonstrates core MERN fundamentals with clean UI, REST APIs, an
 - React.js
 - Vite
 - Tailwind CSS
+- React Query
 
 ### Backend
 - Node.js
@@ -45,54 +36,55 @@ The application demonstrates core MERN fundamentals with clean UI, REST APIs, an
 ---
 
 ## 📁 Project Structure
+contact-hub/
+├── frontend/
+└── backend/
 
-frontend/
-backend/
+---
+
+## 🔗 Live Demo
+
+- **Frontend (Vercel)**  
+  https://contact-hub-frontend.vercel.app/
+
+- **Backend API (Render)**  
+  https://contact-hub-backend.onrender.com/api/contacts
 
 ---
 
 ## 🔗 API Endpoints
 
 | Method | Endpoint | Description |
-|------|---------|------------|
+|------|--------|------------|
 | GET | /api/contacts | Fetch all contacts |
-| POST | /api/contacts | Create a new contact |
-| PUT | /api/contacts / /api/contacts/:id | Update an existing contact |
-| PATCH | /api/contacts/:id | Partially update a contact |
-| DELETE | /api/contacts/:id | Delete a contact |
+| POST | /api/contacts | Create new contact |
+| PUT | /api/contacts/:id | Update contact |
+| DELETE | /api/contacts/:id | Delete contact |
 
 ---
 
-## 🧪 Validation Rules
-
-- Name and Phone are required
-- Email must be in valid format
-- Submit button is disabled when the form is invalid
-
----
-
-## ▶️ Run Project Locally
-
-### Frontend
-cd frontend
-npm install
-npm run dev
+## ▶️ Run Locally
 
 ### Backend
 cd backend
 npm install
 npm run dev
 
-Create a .env file in the backend directory:
+Create .env file:
 MONGO_URI=your_mongodb_connection_string
 PORT=5000
 
+### Frontend
+cd frontend
+npm install
+npm run dev
+
 🌐 Deployment
-Frontend: Vercel / Netlify
-Backend: Render / Railway
-Database: MongoDB Atlas
+Frontend deployed on Vercel
+Backend deployed on Render
+Database hosted on MongoDB Atlas
 
 👤 Author
 Taranjeet Singh
-B.Tech Computer Science & Engineering
+B.Tech – Computer Science & Engineering
 Aspiring MERN Stack Developer
