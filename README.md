@@ -84,6 +84,10 @@ Frontend deployed on Vercel
 Backend deployed on Render
 Database hosted on MongoDB Atlas
 
+🔗 Links
+Frontend-: https://github.com/Taranjeet16/contact-hub-frontend.git
+Backend-: https://github.com/Taranjeet16/contact-hub-backend.git
+
 👤 Author
 Taranjeet Singh
 B.Tech – Computer Science & Engineering
